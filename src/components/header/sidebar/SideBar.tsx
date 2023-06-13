@@ -9,9 +9,10 @@ type SideBarProps = {
 const SideBar: FC<SideBarProps> = ({ showMenu }) => {
   return (
     <ul
-      className={`bg-[#235c47] w-full top-0 absolute h-screen transition-all flex flex-col items-center justify-center gap-14 duration-500 py-40 ${
-        showMenu ? 'left-0' : 'left-full'
-      }`}
+      style={{
+        left: showMenu ? '0' : '100%',
+      }}
+      className="absolute top-0 flex h-screen w-full flex-col items-center justify-center gap-14 bg-[#235c47] py-40 transition-all duration-500"
     >
       {menuElements.map((element, i) => (
         <MenuElement showMenu={showMenu} key={i} element={element} index={i} />

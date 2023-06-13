@@ -3,28 +3,25 @@ import { images } from '~/assets/images';
 import Navbar from '~/components/header/navbar/Navbar';
 
 const { dust } = images;
-console.log(dust);
 
 const MainLayout = () => {
   return (
-    <div className="">
-      <div
-        // style={{
-        //   backgroundImage: dust,
-        // }}
-        className="h-screen overflow-x-hidden bg-blue-500"
-      >
-        <header className="">
-          <Navbar />
-          {/* <ScrollSVG /> */}
-        </header>
+    <div
+      style={{
+        backgroundImage: dust,
+        zIndex: 20,
+      }}
+      className="h-screen overflow-x-hidden"
+    >
+      <header className="">
+        <Navbar />
+      </header>
 
-        <main>
-          <Outlet />
-        </main>
+      <main>
+        <Outlet />
+      </main>
 
-        <footer></footer>
-      </div>
+      <footer></footer>
     </div>
   );
 };
