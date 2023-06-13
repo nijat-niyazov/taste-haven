@@ -4,24 +4,24 @@ import SideBar from '../sidebar/SideBar';
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const [prevScroll, setPrevScroll] = useState(0);
+  // const [prevScroll, setPrevScroll] = useState(0);
 
-  const [direction, setDirection] = useState('up');
+  // const [direction, setDirection] = useState('up');
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    const handleScroll = () => {
-      console.log('scroll');
-    };
+  //   const handleScroll = () => {
+  //     console.log('scroll');
+  //   };
 
-    document.addEventListener('scroll', handleScroll);
+  //   document.addEventListener('scroll', handleScroll);
 
-    return () => {
-      document.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  console.log('okay');
+  // console.log('okay');
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -54,9 +54,9 @@ const Navbar = () => {
 
   return (
     <nav
-      style={{
-        top: direction === 'up' ? '0' : '-240px',
-      }}
+      // style={{
+      //   top: direction === 'up' ? '0' : '-240px',
+      // }}
       className="fixed top-0 z-20  flex w-full items-start justify-between p-6"
     >
       <div className="z-10 font-extrabold uppercase text-amber-500">
