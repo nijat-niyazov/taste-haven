@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import SideBar from '../sidebar/SideBar';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   // const [direction, setDirection] = useState('up');
 
   // useEffect(() => {
-    
+
   //   const handleScroll = () => {
   //     console.log('scroll');
   //   };
